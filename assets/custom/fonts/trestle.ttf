@@ -1,1 +1,3 @@
+Updated the font file names in the @font-face declaration to reflect the new naming convention.
 
+Make sure to also rename the font files (TRESTLE.eot, TRESTLE.ttf, TRESTLE.woff, TRESTLE.svg) in your fonts directory to match the updated paths in the @font-face declaration
