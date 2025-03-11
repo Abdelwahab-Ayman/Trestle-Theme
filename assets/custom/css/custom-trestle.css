@@ -1,1 +1,1429 @@
+/* @Author: Enterprise Development
+   @URL: http://ed.com.eg/
 
+    This file contains the styling for the actual theme, this
+     is the file you need to edit to change the look of the
+     theme.
+
+     This files contents are outlined below.
+
+
+     1.  Default Styles
+     2.  Base Styles
+     3.  Preloader
+     4.  Testimonials
+     5.  headers
+     6.  footers
+     7.  pricing tables
+     8.  team members
+     9.  blog 
+     10. image hover effects
+     11. counters 
+     12. Navigation
+     13. Contact Pages
+     14. 404 Page
+     15. comming soon 
+     16. Social Share
+     17. Related Blogs0
+     18. Pagination
+     19. BreadCrumbs
+     20. Comments 
+     21. general styles
+     
+*/
+
+    
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/*************** search icon *********************/
+#search {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    z-index: 999999;
+    opacity: 0;
+}
+ 
+.TRESTLE-header-icons .dropdown-toggle::after {
+    display: none; 
+}
+.TRESTLE-header-icons .dropdown-menu { 
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+ 
+#search.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+	-o-transform: translate(0px, 0px) scale(1, 1);
+	-ms-transform: translate(0px, 0px) scale(1, 1);
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+}
+.TRESTLE-mega-menu-btn {
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 50%;
+    text-align: center !important;
+    width: 45px;
+    height: 45px;
+    line-height: 47px;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    padding: 0 !important;
+}
+.TRESTLE-light-background-color a{
+    color: #2C3E4F !important; 
+}
+.dropdown-toggle::after {
+    display: none;
+}
+#search input[type="search"] {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+#search .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 70px;
+    margin-left: 0;
+    transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+}
+#search .close {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    background-color: #E54D42;
+    border-color: #E54D42;
+    opacity: 1;
+    padding: 10px 17px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+/* start TRESTLE header */
+.header-fixed-height{
+    height: 90px;
+}
+
+.TRESTLE-cart-number {
+    position: absolute;
+    color: #fff; 
+    border-radius: 50%;
+    width: 20px;
+    top: -6px;
+    height: 20px;
+    line-height: 20px;
+    right: -10px;
+    font-size: 12px;
+}
+.TRESTLE-mega-menu li a.header-icon{
+    color: #2C3E4F;
+}
+.max-line-height{
+    line-height: 75px;
+}
+.header-fixed-height-large{
+    height: 130px;
+}
+.header-fixed-height-large .TRESTLE-transparent{
+    top: 40px;
+}
+.TRESTLE-light-background-color .TRESTLE-mega-menu-btn {
+    border: 1px solid #2C3E4F !important; 
+    color: #2C3E4F !important;
+}
+.TRESTLE-header { 
+    padding: 33px 0;
+    background-image: url(../images/pages-header-background.jpg); 
+}
+.TRESTLE-after-overlay{
+    position: relative; 
+}
+.TRESTLE-after-overlay::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(44,62,79,.8);
+}
+.overlay-lighter:after{
+    background-color: rgba(44,62,79,.7);
+}
+.TRESTLE-transparent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+}
+.TRESTLE-page-title {
+    color: #fff;
+    border-left-style: solid;
+    border-left-width: 9px;
+    z-index: 1;
+    position: relative;
+    padding-left: 16px;
+    margin-top: 108px;
+    line-height: 80px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 47px;
+}
+.TRESTLE-top-header-signin{
+    height: 40px;
+    line-height: 38px;
+}
+.lang-dropdown{
+    top: 4px !important;
+}
+.lang-dropdown-btn:focus {
+    box-shadow: none !important;
+}
+.header-icon .TRESTLE-cart-number , .max-line-height .TRESTLE-cart-number{ 
+    width: 18px;
+    top: 16px;
+    height: 18px;
+    line-height: 18px;
+    right: 12px;
+    font-size: 12px;
+}
+.lang-dropdown .dropdown-item {
+    padding: 0 11px;
+    border-bottom: 1px solid #90989f;
+    line-height: 41px;
+}
+.lang-dropdown .dropdown-item:last-child{
+    border: 0;
+}
+.top-header-link{
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-color: rgba(255, 255, 255, 0.3);
+    border-left-color: rgba(255, 255, 255, 0.3);
+    border-right-style: solid;
+    border-left-style: solid;
+    color: #eee !important;
+    float: right;
+}
+/* End TRESTLE header */
+
+/*********************SIGN IN****************************/
+.sign-register-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #BFBFBF !important;
+}
+.sign-register-input::-moz-placeholder { /* Firefox 19+ */
+   color: #BFBFBF !important;
+}
+.sign-register-input:-ms-input-placeholder { /* IE 10+ */
+   color: #BFBFBF !important;
+}
+.sign-register-input:-moz-placeholder { /* Firefox 18- */
+   color: #BFBFBF !important;
+}
+
+/* start TRESTLE breadcrumb */
+.TRESTLE-breadcrumb {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+.TRESTLE-breadcrumb .breadcrumb-item{
+    font-size: 15px;
+}
+/* end TRESTLE braedcrum */
+
+/* start about us pages */
+.TRESTLE-vision-overlay { 
+    padding: 47px 25px 51px 25px;
+    color: #DDDDDD;
+    height: 100%;
+}
+
+.TRESTLE-bussiness-section{
+    background-image: url(../images/paper-3139127_1280.jpg); 
+}
+.TRESTLE-bussiness-caption {
+    background-color: rgba(255,255,255,.9);
+    padding: 15px;
+}
+.TRESTLE-btn-link{
+    z-index: 1;
+    position: relative;
+    width: 166px;
+    height: 43px; 
+    line-height: 30px;
+}
+.TRESTLE-btn-link:hover span{
+    color: #fff;
+}
+.TRESTLE-btn-link::after {
+    position: absolute;
+    content: "";
+    background-color: #E54D42;
+    border: 2px solid #E54D42;
+    left: 0;
+    right: 78%;
+    border-radius: 30px;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+}
+.TRESTLE-btn-link:hover:after{
+    opacity: 1;
+    right: 0;
+}
+.TRESTLE-vision-overlay.TRESTLE-after-overlay::after { 
+    background-color:rgba(44,62,79,.97); 
+}
+.TRESTLE-light-overlay.TRESTLE-after-overlay::after {
+    background-color: rgba(255,255,255,.87);
+}
+.TRESTLE-counter-section{
+    background-image: url("../images/counter-background.jpg");  
+}
+.TRESTLE-counter {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+}
+.TRESTLE-counter-no-background{
+    background: none;
+}
+.TRESTLE-team-border .TRESTLE-team-social-icon {
+    border: 0;
+    width: auto;
+    height: auto;
+    margin: 0 7px; 
+}
+.TRESTLE-team-social-icon:hover{
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+}
+.TRESTLE-testimonial {
+    background-image: url(../images/big-overlay.jpg);  
+}
+.TRESTLE-testimonial-no-background{
+    background: none;
+    padding: 0;
+}
+#TRESTLE-testimonial-carousel .owl-item {
+    padding: 58px 150px 23px;
+    border-radius: 15px;
+    margin-top: 0;
+}
+.TRESTLE-testimonial-carousel-item {
+    background-color: rgba(255,255,255,.1);
+    box-shadow: 0 0 2px #fff;
+    border-radius: 9px;
+    padding: 8px;
+}
+.TRESTLE-testimonial .owl-carousel .owl-stage-outer { 
+    padding: 73px 0 5px;
+}
+.half-width-testimonial .owl-carousel .owl-stage-outer{
+    padding: 0 2px 2px;
+}
+.TRESTLE-carousel-border .TRESTLE-partner-carousel-img{
+    opacity: .6;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    border-width: 1px;
+    border-style: solid;
+}
+.TRESTLE-carousel-border .owl-item:hover .TRESTLE-partner-carousel-img{
+    opacity: 1;
+}
+.TRESTLE-carousel-border .owl-nav{
+    display: none;
+}
+.TRESTLE-testimonial-detail::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "\f10d";
+    font-weight: 700;
+    font-family:  Font Awesome\ 5 Free;
+}
+.TRESTLE-testimonial-detail:after{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "\f10e";
+    font-weight: 700;
+    font-family: Font Awesome\ 5 Free;
+}
+.TRESTLE-testimonial-carousel-img {
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    width: auto !important;
+    margin:-120px auto 18px;
+}
+#TRESTLE-testimonial-carousel  .owl-dot span{ 
+    margin: 5px 4px;
+    background: transparent; 
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+#TRESTLE-testimonial-carousel  .owl-dot.active span{  
+    background: #fff;  
+}
+.TRESTLE-testimonial-block:after {
+    content: "\f10d";
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-weight: 700;
+    font-family: Font Awesome\ 5 Free;
+    z-index: -1;
+    font-size: 45px;
+}
+.TRESTLE-testimonial-block-img{
+    max-width: 100%;
+}
+.TRESTLE-about-top-head:before {
+    content: "";
+    position: absolute;
+    left: 70px;
+    background-color: #5C6A77;
+    width: 140px;
+    height: 1px;
+    top: 50%;
+    z-index: -1;
+}
+.TRESTLE-about-top-head:after {
+    content: "";
+    position: absolute;
+    right: 70px;
+    background-color: #5C6A77;
+    width: 140px;
+    height: 1px;
+    top: 50%;
+    z-index: -1;
+}
+.TRESTLE-about-icon-style {
+    text-align: center;
+}
+.TRESTLE-title-border {
+    height: 1px;
+    display: block;
+    width:  15%;
+    margin: 0 auto 15px;
+}
+.TRESTLE-team-block {
+    text-align: center;
+    border-width: 0;
+    border-radius: 0;
+}
+.TRESTLE-team-border {
+    border-width: 0 0 2px 0;
+    border-style: solid; 
+}
+.TRESTLE-team-social-links{
+    justify-content: center;
+}
+.TRESTLE-team-social-icon {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    font-size: 14px;
+}
+.TRESTLE-team-data-hover{
+    overflow: hidden;
+}
+.TRESTLE-team-data-hover .card-body {
+    position: absolute;
+    bottom: -45%;
+    width: 100%;
+    height: 100%;
+    padding-top: 44%;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+.TRESTLE-team-data-hover .TRESTLE-team-social-icon {
+    border: 0;
+    background-color: #fff;
+}
+.TRESTLE-team-data-hover:hover .card-body {
+    opacity: 1;
+    bottom: 0;
+}
+.TRESTLE-team-data-hover .TRESTLE-team-name{
+    color: #fff;
+}
+.TRESTLE-team-name:hover{
+    transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+}
+.TRESTLE-team-data-hover .TRESTLE-team-pos { 
+    color: #B4B4B4;
+}
+.TRESTLE-partner-carousel-img {
+    width: auto !important;
+    margin: 0 auto;
+    transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+}
+#TRESTLE-partner-carousel .owl-nav div {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.TRESTLE-btn-value{
+    z-index: 6;
+}
+.TRESTLE-page-link {
+    margin: 0 8px;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    line-height: 29px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+}
+ 
+.TRESTLE-pagi-dots {
+    width: 46px;
+    height: 46px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 26px;
+}
+.TRESTLE-pagination{
+    justify-content: center;
+}
+#TRESTLE-partner-carousel .owl-prev {
+    left: 15px;
+    top: 14px;
+}
+#TRESTLE-partner-carousel .owl-next {
+    right: 15px;
+    top: 14px;
+}
+.TRESTLE-partner-nav-icon{
+    border-style: solid;
+    border-width: 1px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+}
+/******************* Start Store Pages *************************/
+.TRESTLE-view-btn {
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 19px;
+    display: inline-table;
+    margin: 0 3px;
+    float: right;
+    width: 38px;
+    height: 38px;
+    line-height: 25px;
+}
+.store-single-slider #sync2 .owl-item img{
+        border: 2px solid transparent;
+}
+.store-single-slider #sync2 .owl-item.current img{
+    border: 2px solid #E54D42;
+    -webkit-transition: all ease-in-out.3s;
+       -moz-transition: all ease-in-out.3s;
+         -o-transition: all ease-in-out.3s;
+            transition: all ease-in-out.3s;
+}
+.TRESTLE-view-btn.active{
+    color: #E54D42;
+    border-color: #E54D42;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+}
+.TRESTLE-product-info {
+    text-align: center;
+}
+.list .TRESTLE-product-info{
+    text-align: right;
+}
+.TRESTLE-btn-rouned{
+    border-radius: 22px;
+}
+.TRESTLE-hover-btn-color {
+    position: relative;
+}
+.TRESTLE-hover-btn-color:hover:after{
+    right: 0;
+    opacity: 1;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+}
+.TRESTLE-hover-btn-color:hover ,.TRESTLE-hover-btn-color:hover span{
+    color: #fff !important;
+}
+.TRESTLE-hover-btn-color::after {
+    content: "";
+    border-radius: 22px;
+    position: absolute;
+    left: 0; 
+    background-color: #E54D42;
+    height: 100%;
+    right: 77%;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+}
+.TRESTLE-hover-btn-color span{
+    z-index: 2;
+    position: relative;
+}
+.TRESTLE-img-overlay {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    overflow: hidden;
+}
+.TRESTLE-img-overlay:hover {
+    background-color: rgba(92,106,119,.6);    
+}
+.TRESTLE-product-btns {
+    justify-content: center;
+    margin-top: 0;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+}
+.TRESTLE-img-overlay:hover .TRESTLE-product-btns{
+    opacity: 1;
+    margin-top: 29%;
+}
+.TRESTLE-product-btn {
+    border: 0;
+    background-color: rgba(255,255,255,.6);
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+}
+.TRESTLE-product-btn:hover {
+    color: #E54D42;
+}
+.TRESTLE-store-left-head {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+}
+.TRESTLE-store-left-list li {
+    display: block;
+    width: 100%;
+}
+.TRESTLE-store-left-list a {
+    position: relative;
+    color: inherit; 
+    font-size: 14px;
+    background-color: inherit;
+    padding: 7px 0 0 15px;
+    display: block;
+}
+.TRESTLE-store-left-list a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width:6px ;
+    height: 6px;
+    border-radius: 50%;
+    background-color: inherit;
+}
+.input-icon {
+    position: relative;
+}
+.TRESTLE-input-icon {
+    position: absolute;
+    left: 15px;
+    color: #CDCDCD;
+    top: 14px; 
+}
+.TRESTLE-store-input{
+    font-size: 14px;
+    height: 39px;
+    padding-left: 35px;
+}
+.TRESTLE-store-sigle-head{
+    font-size: 20px;
+    font-weight: 600; 
+}
+.TRESTLE-single-info{
+    font-size: 15px;
+    line-height: 25px;
+    color: #989898;
+}
+.TRESTLE-single-nav { 
+    width: 100%;
+}
+.TRESTLE-single-item.active{
+    color: #fff !important;
+}
+.TRESTLE-single-item {
+    border-radius: 0 !important;
+    border: 0 !important;
+    padding: 10px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+}
+.TRESTLE-single-item:last-child:after{
+    display: none;
+}
+.TRESTLE-single-item::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 17px;
+    background-color: inherit;
+    top: 13px;
+    right: 12px;
+}
+.TRESTLE-single-item.active:after {
+    display: none;
+}
+.TRESTLE-single-slider #sync1 {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.TRESTLE-single-slider #sync2 .item{
+    margin: 0 2px;
+    cursor: pointer;
+}
+.TRESTLE-single-slider #sync1 .owl-dots{
+    display: none
+}
+.TRESTLE-single-slider #sync1 .owl-nav {
+    margin-top: 0;
+    position: absolute;
+    top: 44%;
+    width: 100%;
+}
+.TRESTLE-single-slider #sync1 .owl-prev {
+    position: absolute;
+    left: -18px;
+    margin: 0 !important; 
+    text-align: right;
+    padding-right: 10px !important;
+}
+.TRESTLE-single-slider #sync1 .owl-next{
+    position: absolute;
+    right: -18px;
+    text-align: left;
+    padding-left: 10px !important;
+}
+.TRESTLE-single-slider #sync1 .owl-nav [class*=owl-] {
+    font-size: 13px;
+    margin: 0;
+    background-color: rgba(229,77,66,.6);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 34px;
+}
+.TRESTLE-single-product-btn{
+    text-align: left;
+}
+.TRESTLE-calc{
+    padding: 4px 9px;
+}
+
+.TRESTLE-calc span { 
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+ 
+.TRESTLE-single-link {
+    font-size: 21px;
+    margin-top: 4px;
+    display: inline-block;
+    margin: 0 4px;
+    transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+}
+.TRESTLE-single-link:hover {
+    transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+.single-product-btns{
+    justify-content: flex-end;
+}
+.TRESTLE-single-product-data{
+    margin-bottom: 25px;
+}
+ 
+.TRESTLE-single-tags a {
+    color: inherit;
+    margin: 4px 3px 0; 
+    font-size: 14px;
+    text-decoration: underline;
+}
+.TRESTLE-contact-hover-input { 
+    border-radius: 0;
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-width: 1px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 0;
+    transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+}
+.TRESTLE-light-footer-links {
+    margin-top: 0 !important;
+    margin-bottom: 6px;
+}
+ 
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+.focus-input input:focus , .focus-input textarea{
+   box-shadow: none !important;    
+}
+
+ .focus-input-white input:focus , .focus-input-white textarea:focus
+,.focus-input-white input       , .focus-input-white textarea{
+    color: #fff;
+}
+.focus-input input:focus ~ label , .focus-input textarea:focus ~ label,
+.focus-input input:valid ~ label , .focus-input textarea:valid ~ label{
+   top: -18px;
+}
+.focus-input label {
+    position: absolute;
+    top:10px;
+    transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    margin: 0;
+    font-size: 16px;
+    pointer-events: none;
+}
+.TRESTLE-contact-hover-input:focus{
+    background-color: transparent;
+    border-color: inherit;
+    outline: 0;
+    box-shadow: none;
+} 
+.TRESTLE-contact-hover-input:focus ~ label{
+    bottom: 25px;  
+    color: #E54D42; 
+}
+ 
+.blog-single-slider .owl-dots{
+    margin-top: 25px;
+}
+.form-circle-input {
+    width: 47px;
+    height: 47px;
+}
+.calc-width{
+    width: 33.3%;
+}
+/************************** Blog styles *********************/
+.TRESTLE-blog-cat-block { 
+    position: relative;
+}
+.TRESTLE-cat-blog-btn{
+    font-size: 16px;
+    padding: 0;
+    text-decoration: underline;
+}
+.TRESTLE-blog-cat-submit {
+    color: #fff;
+    margin-left: 15px;
+}
+.TRESTLE-blog-category{
+    margin-top: 30px;
+}
+.TRESTLE-blog-category-head { 
+    line-height: 37px;
+}
+.TRESTLE-blog-category-head::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: inherit;
+}
+.TRESTLE-blog-cat-list li{
+    width: 100%;
+    margin-bottom: 12px;
+}
+.TRESTLE-blog-cat-list a {
+    color: inherit;
+    text-decoration: underline;
+    padding: 8px 0 8px 40px;
+    display: block;
+    position: relative;
+    background-color: #F9F9F9;
+    margin-bottom: 0;
+}
+.TRESTLE-blog-cat-list a:hover {
+    text-decoration: underline;
+}
+.TRESTLE-blog-cat-list a::before {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 20px; 
+    top: 17px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #E54D42;
+    border-bottom: 5px solid transparent;
+}
+.TRESTLE-blog-recent-post{
+    margin-top: 30px;
+}
+.TRESTLE-recent-blog-btn {
+    font-size: 14px;
+    text-decoration: underline; 
+}
+.TRESTLE-blog-cat-tags li {
+    width: auto;
+    margin-right: 12px;
+}
+.TRESTLE-blog-cat-tags li a{
+    padding: 8px 25px;
+}
+.TRESTLE-blog-cat-tags a::before{
+    display: none;
+}
+ 
+.TRESTLE-blog-date-cat span {
+    margin-right: 7px; 
+}
+.TRESTLE-blog-date span , .TRESTLE-blog-date i{
+    margin-right: 6px;
+}
+.TRESTLE-cat-blog-more {
+    font-size: 14px;
+    padding: 0;
+}
+.TRESTLE-cat-blog-more i{
+    font-size: 11px;
+}
+#blog-slider .owl-dots .owl-dot span {
+    width: 11px;
+    height: 11px;
+    margin: 0 5px;
+    background: #C3C3C3; 
+}
+#blog-slider .owl-nav.disabled+.owl-dots {
+    margin-top: 0;
+}
+.TRESTLE-blog-overlay { 
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    
+}
+.TRESTLE-blog-overlay:hover:after {
+    opacity: 1
+}
+.TRESTLE-blog-overlay:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(30,87,153,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%);
+    background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e5799',GradientType=0 );
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+    -o-transition:all ease-in-out .3s; 
+   -webkit-transition:all ease-in-out .3s; 
+   -moz-transition:all ease-in-out .3s; 
+   transition:all ease-in-out .3s;
+}
+.TRESTLE-blog-overlay .TRESTLE-blog-head a {
+    border-width: 1px;
+    border-style: solid;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0; 
+}
+
+.TRESTLE-blog-overlay .TRESTLE-blog-date {
+    font-size: 14px;
+    z-index: 2;
+    position: relative;
+}
+.blog-teaser .owl-nav.disabled+.owl-dots {
+    margin-top: 0;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+.blog-teaser  .owl-dots .owl-dot span { 
+    margin: 5px 3px;
+    background: #D6D6D6; 
+}
+.latest-news-img-block {
+    position: relative;
+}
+.latest-news-text {
+    line-height: 25px;  
+}
+.img-contain {
+    position: relative;
+}
+.img-contain:hover .TRESTLE-blog-details-overlay{
+    opacity: 1;
+}
+.TRESTLE-blog-details-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    top: 0; 
+    opacity: 0;
+    transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+}
+.latest-news-text::before { 
+    left: 30px;
+    top: 35px;   
+    font-size: 23px;
+}
+.latest-news-text::after { 
+    right: 30px;
+    bottom: 35px; 
+    font-size: 23px;
+}
+.TRESTLE-text-overlay {
+    text-decoration: underline;
+    padding: 30px 25px 30px 100px;
+    text-align: left; 
+}
+.TRESTLE-text-overlay::before {
+    position: absolute;
+    left: 6px;
+    top: -45px;
+    content: "\f10d";
+    font-weight: 700;
+    font-family: Font Awesome\ 5 Free;
+    background-color: #fff;
+    color: #E54D42;
+    width: 90px;
+    border-radius: 50%;
+    font-size: 31px;
+    height: 90px;
+    text-align: center;
+    line-height: 120px;
+}
+.TRESTLE-blog-comment-submit {
+    color: #fff;
+    border-radius: 0;
+    padding: 12px 30px;
+    font-size: 15px;
+}
+.TRESTLE-single-blog::first-letter { 
+    font-size: 73px; 
+    margin-right: 10px;  
+    color: #5C6A77;
+    float: left;     
+}
+.single-blog .owl-dots{
+    margin-top: 30px;
+}
+.share-head {
+    font-size: 18px;
+    display: inline-block;
+}
+.blog-share-side{
+    margin-top: 8px;
+}
+.TRESTLE-comment-user:hover{
+    text-decoration: underline;
+    color: inherit;
+}
+.TRESTLE-comment { 
+    padding-bottom: 5px; 
+}
+.TRESTLE-comments .TRESTLE-comment:last-child{
+    border: 0;
+}
+.lightgallery {
+    position: relative;
+}
+.demo-gallery-poster {
+    position: absolute;
+    text-align: center;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.lightgallery::after {
+    position: absolute;
+    content: "";
+    background-color: rgba(0,0,0,.59);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.demo-gallery-poster img{
+    opacity: .6;
+}
+.demo-gallery-poster:hover img{
+    opacity: 1;
+}
+.blog-detail-head{
+    font-size: 20px;
+    font-weight: 600;
+}
+.blog-detail-data{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.TRESTLE-blog-quote .TRESTLE-iconquote-left-light{
+    margin-left: -20px;
+    float: left;
+    margin-top: -7px;
+}
+.TRESTLE-blog-quote .TRESTLE-iconquote-right-light{
+    margin-right: -20px;
+    float: right; 
+}
+.grid-item {  
+    width: 50%;
+}
+.blog-large-head::before{
+    content: "";
+    position: absolute;
+    background-color: inherit;
+    left: 0;
+    bottom: 35px;
+    width: 10px;
+    height: 10px;
+}
+.TRESTLE-masonry-img{
+    width: 100%;
+}
+.underlined-head{
+    display: inline-block;
+}
+.underlined-head::before {
+    color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #fff;
+    bottom: -5px;
+}
+.inside-text-carousel{
+    width: 50%; 
+    float: left;
+}
+
+#cd-timeline{
+    overflow: hidden;
+}
+.white-color{
+    color: #fff;
+}
+.white-color-hover:hover{
+    color: #fff;
+}
+.load-more{
+    padding: 9px 32px;
+}
+.load-more:hover{
+   color: #fff;
+} 
+.nav-slider .owl-dots .owl-dot span{ 
+    margin: 5px 3px;
+    background: #D6D6D6; 
+}
+.nav-slider .owl-nav [class*=owl-] {
+    color: #989898;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.nav-slider .owl-nav [class*=owl-]:hover {
+    color: #E54D42 ;
+    background-color: transparent;
+}
+.nav-slider .owl-prev {
+    left: -8%; 
+    bottom: -20px;
+    position: relative;
+}
+.nav-slider .owl-next {
+    right: -8%; 
+    bottom: -20px;
+    position: relative;
+}
+/************************** /Blog styles *********************/
+
+/***************** colord chexkboxes ************************/
+/* The container */
+.TRESTLE-product-color {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 27px;
+    margin: 0;
+}
+
+/* Hide the browser's default checkbox */
+.TRESTLE-product-color input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.TRESTLE-product-color:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.TRESTLE-product-color input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.TRESTLE-product-color input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.TRESTLE-product-color .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* start contact pages */
+.TRESTLE-contact-form {
+    margin-bottom: 25px;
+}
+#map {
+ width: 100%;
+ height: 420px;
+ }
+.TRESTLE-contact-social-links{
+    justify-content: center;
+}
+.TRESTLE-contact-block-border { 
+    min-height: 155px; 
+}
+.TRESTLE-rounded{
+    border-radius: 10px;
+}
+.TRESTLE-contact-icon { 
+    margin-top: -25px; 
+}
+.TRESTLE-contact-caption { 
+    background-image: url(../images/contact-caption-back.jpg); 
+}
+.TRESTLE-rounded-btn:hover {
+    color: #fff;
+}
+
+.TRESTLE-single-gallery-pg{
+    font-size: 14px;
+    line-height: 18px;
+    padding: 11px 25px;
+}
+.TRESTLE-single-gallery-pg:hover{
+    color: #fff;
+}
+/* end contact us pages  */
+
+/******************Start Range Slider**********************/
+ .range-slider .output, .range-slider output { 
+    color: inherit; 
+    font-weight: 600;
+}
+.range-slider [type=range]::-webkit-slider-thumb { 
+    background: #E54D42; 
+    width: 16px;
+    height: 16px; 
+}
+.range-slider .track--included {
+    background: #E54D42; 
+    height: 8px;
+}
+.range-slider .track--full {
+    background: #CDCDCD; 
+    height: 8px; 
+}
+.range-slider .track {
+    bottom: 33px !important;
+}
+/******************End Range Slider**********************/
