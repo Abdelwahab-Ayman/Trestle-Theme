@@ -2136,3 +2136,426 @@ body{
     text-align: left;
 }
 /******************End Gallery************************/
+/* comming sson*/
+#comming-soon{
+    margin: 100px 0 0;
+}
+.comming-soon-counter{
+    display: inline-block;
+    font-size: 80px;
+    color: #E54D42;
+    font-weight: 700;
+    line-height: 40px;
+}
+.comming-soon-counter span{
+    font-size: 18px;
+    font-weight: 300;
+    color: #A9A9A9;
+}
+.TRESTLE-comming-head{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 55px;
+}
+.page-a { 
+    display: inline-block;
+    padding: 10px 53px; 
+}
+
+/*********************Start Index ***************************/
+.top-row-hide{
+    top: -50px;
+}
+.index4-transparent{
+    background-color: rgba(44,62,79,.8);
+}
+.TRESTLE-sqr-nav .owl-nav [class*=owl-]{  
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    color: #E54D42; 
+    background-color: #fff;
+    border-radius: 0;
+    font-size: 23px;
+    position: absolute;
+    top: 38%;
+    padding: 1px;
+}
+.TRESTLE-sqr-nav .owl-nav .owl-prev {
+    left: -8%;
+}
+.TRESTLE-sqr-nav .owl-nav .owl-next {
+    right: -8%;
+}
+.TRESTLE-main-head{
+    font-size: 35px;
+}
+.table-badge { 
+    top: 0;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 7px;
+}
+.line-height-large{
+    line-height: 30px;
+}
+.table-title:after {
+    content: "";
+    position: absolute;
+    left: 27%;
+    right: 27%;
+    height: 1px;
+    bottom: -12px;
+    background-color: inherit;
+}
+.table-block{ 
+    border-top: 1px solid #ECF0F1;
+    border-right: 1px solid #ECF0F1;
+    border-left: 1px solid #ECF0F1;
+    border-bottom: 3px solid #ECF0F1;
+    transition:  all ease-in-out .3s;
+    -o-transition:  all ease-in-out .3s;
+    -webkit-transition:  all ease-in-out .3s;
+    -moz-transition:  all ease-in-out .3s;
+}
+.table-block:hover {
+    box-shadow: 0 0 10px #d2caca;
+    border-top: 1px solid #ECF0F1 !important;
+    border-right: 1px solid #ECF0F1 !important;
+    border-left: 1px solid #ECF0F1 !important;
+    border-bottom: 3px solid #E54D42;
+}
+.work-icon {
+    font-size: 20px;
+    position: relative;
+}
+.work-icon:after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 1px;
+    background-color: #DDDDDD;
+    right: -16px;
+}
+.work-icon:last-child:after {
+    display: none;
+}
+.border-hover{ 
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+}
+.border-hover:hover{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8E9297;
+}
+.above-date {
+    bottom: 7%;
+    left: 7%;
+}
+.above-date .day{
+    font-size: 26px;
+}
+.above-date .month{
+    font-size: 10px;
+}
+.TRESTLE-index-products {
+    background-image: url("../images/index-products-overlay.jpg");
+    height: 466px;
+    margin-bottom:5%;
+}
+.sm-index-products{
+    height: auto; 
+}
+.large-mb { 
+    margin-bottom: 25%;
+}
+.sm-index-products .owl-nav {
+    bottom: -18%;
+    top: auto !important;
+    right: auto !important;
+    width: 100%;
+}
+.vertical-store-btns{
+    margin-top: 10%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-right: -26%;
+}
+.TRESTLE-img-overlay:hover .vertical-store-btns{
+    margin-right: 0;
+}
+.vertical-store-btns li {
+    margin-bottom: 8px;
+}
+.circle-nav .owl-nav {
+    display: block !important;
+    position: absolute;
+    top: -13%;
+    right: 0;
+}
+.circle-nav .owl-nav [class*=owl-] {
+    margin: 0 5px;
+    padding: 0;
+    background-color: rgba(255,255,255,.2);
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    line-height: 37px;
+    font-size: 14px;
+    font-weight: normal;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.circle-nav .owl-nav [class*=owl-]:hover {
+    background-color: #E54D42;
+}
+.half-width-testimonial{
+    background-image: url(../images/index-testimonial.jpg); 
+    margin-bottom: 11% !important;
+}
+.half-width-testimonial .owl-item{
+    padding: 0 !important;
+}
+.half-width-testimonial .owl-stage-outer {
+    padding: 5px;
+}
+.half-width-testimonial .TRESTLE-testimonial-carousel-item { 
+    width: 97%; 
+}
+.half-width-testimonial .TRESTLE-testimonial-detail { 
+    padding: 15px;
+}
+.half-width-testimonial .owl-nav {
+    position: absolute;
+    top: 15%;
+    left: 15px;
+    margin: 0;
+    right: 15px;
+}
+.half-width-testimonial .owl-nav [class*=owl-] {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.half-width-testimonial .owl-nav [class*=owl-]:hover {
+    background-color: transparent;
+    color: #E54D42;
+}
+.half-width-testimonial .owl-next { 
+    right: 0;
+}
+.half-width-testimonial .owl-prev {
+    left: 0 !important; 
+}
+.TRESTLE-dots-circle {
+    position: absolute;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%; 
+    top: 2px; 
+}
+.TRESTLE-dots-circle::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 6px;
+    right: 6px;
+    transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+}
+.TRESTLE-dots-text{
+   padding-left: 32px; 
+}
+.TRESTLE-dots-text:hover .TRESTLE-dots-circle::after{
+    width: 19px;
+    height: 19px;
+    top: -1px;
+    right: -1px;
+}
+.together-block{
+    background-image: url("../images/together.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.together-abs-img {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+}
+.together-details{    
+    padding-right: 35%;
+}
+.TRESTLE-lus-icon {
+    display: inline-block;
+    height: 44px;
+    text-align: center;
+    width: 48px;
+    padding-top: 7px;
+    line-height: 32px;
+    top: -1px;
+    left: -1px;
+}
+.TRESTLE-choose-background{
+    background-image: url("../images/choose-us-background.jpg"); 
+}
+.colored-table .table-badge{
+    left: -24px;
+}
+.TRESTLE-table-arrow {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+}
+.colored-table:hover i {
+    transform: rotate(360deg);
+    transition: all ease-in-out .3s;
+}
+.TRESTLE-price-bg{
+    background-image: url("../images/table-bg.jpg"); 
+}
+.subscribe-index-bg{
+    background-image: url("../images/talk-coasts-friends.jpg");
+} 
+.TRESTLE-sqr-rotation {
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    right: -60%;
+    z-index: 9;
+    top: 27%;
+}
+.TRESTLE-sqr-rotation:after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    border-width: 2px;
+    border-style: solid;
+    bottom: -5%;
+    right: -5%;
+    border-color: inherit;
+}
+.text-rotate {
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    margin-top: 18%;
+    margin-right: 11%;
+}
+.sm-index-products .all-index-products{
+    right: 0;
+    bottom: 0;
+}
+.center-number-table {
+    width: 130px;
+    height: 130px;
+    right: auto;
+    bottom: -41%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+}
+.center-number-table  .table-badge { 
+    right: 20px;
+    top: 30px;
+}
+.testimonial-index-bg{
+    background-image: url("../images/testimonial-index-bg.jpg");
+}
+.choose-img-border-after::after {
+    content: "";
+    position: absolute;
+    border-width: 1px;
+    border-style: solid;
+    width: 99%;
+    height: 100%;
+    left: auto;
+    bottom: -10%;
+    right: 7%;
+    border-color: inherit;
+    z-index: -1;
+}
+.TRESTLE-index-services{
+    background-image: url("../images/index-services-bg.jpg");
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+.TRESTLE-sqr-rotation-services {  
+    right: -60%; 
+    top: 17%;
+}
+.index-3-height{ 
+    background-image: url("../images/top-header-background.jpg");
+}
+.center-testimonial-carousel .owl-item {
+    padding: 58px 60px 23px !important; 
+}
+.center-testimonial-carousel .TRESTLE-testimonial-carousel-item{
+    padding: 40px;
+}
+.testimonial-index-bg  .owl-item{
+    padding: 0 2px 5px !important;
+}
+.testimonial-index-bg  .owl-item img { 
+    margin-top: -106px !important;
+    margin-bottom: 30px !important;
+}
+.index-3-height-caption{
+    margin-top: 25%;
+}
+.index-traingle{
+    position: relative;
+    overflow: hidden;
+}
+.index-traingle::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 0;
+	height: 0;
+	border-bottom: 100vh solid rgba(255,255,255,.75);
+	border-right: 98.5vw solid transparent;
+    z-index: 3;
+    bottom: 0;
+}
+.TRESTLE-sqr-nav {
+    z-index: 9;
+    margin: 7% 0 10%;
+}
+.TRESTLE-mega-menu li .cart-block a { 
+    padding: 0 !important; 
+}
+.cart-block{
+    width: 290px !important;
+}
+.cart-block li , .cart-block p{
+    line-height: 30px !important; 
+}
+/*********************End  Index **************************************/
